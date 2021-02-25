@@ -1,4 +1,5 @@
 import {Posts} from './components/Posts/Posts'
+import {Books} from './components/books/Books'
 import './App.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       </h1>
 
       <Posts />
+      <Books />
     </div>
   );
 }
