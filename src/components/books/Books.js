@@ -16,7 +16,7 @@ export class Books extends Component {
         axios
             .get(this.booksEndPoint)
             .then((res) => {
-                console.log('responce', res);
+                console.log('responcee', res);
 
                 //replace array in state
                 this.setState({
