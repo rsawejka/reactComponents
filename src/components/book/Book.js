@@ -30,21 +30,20 @@ export class Book extends Component {
     render (){
         return(
             <div className="Book">
-                <h3>{this.props.title}</h3>
-                <p dangerouslySetInnerHTML={{__html: this.props.body}}></p>
-                <img src={this.state.pics.source_url} />
+                <div id="flexL">
+                    <img src={this.state.pics.source_url} />
+                </div>
+                <div id="flexR">
+                    <h3>{this.props.title}</h3>
+                    <p dangerouslySetInnerHTML={{__html: this.props.body}}></p>
+                </div>
+
+
 
             </div>
         )
     }
 }
-
-
-
-
-
-
-
 Book.propTypes = {
     title: PropTypes.string,
     body: PropTypes.string,
