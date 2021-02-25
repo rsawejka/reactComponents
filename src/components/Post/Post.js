@@ -5,7 +5,7 @@ import './Post.scss';
 const Post = (props) => (
   <div className="Post">
           <h3>{props.title}</h3>
-          <p>{props.body}</p>
+          <p dangerouslySetInnerHTML={{__html: props.body}}></p>
 
   </div>
 );
