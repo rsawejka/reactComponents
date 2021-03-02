@@ -12,6 +12,9 @@ function App() {
       <h1>
           Our first react app.
       </h1>
+
+      <Posts />
+
         <SearchPosts  onSearchResult={(results) => setPosts(results)}/>
         <hr />
       <Posts  posts={posts}/>
