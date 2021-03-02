@@ -1,0 +1,26 @@
+.Book{
+  display: flex;
+  width: 70%;
+  margin: 40px auto;
+  text-align: center;
+}
+.Book #flexL{
+  margin-top: 120px;
+  margin-right: 100px;
+}
+.Book #flexR{
+  background-color: #0c0e10;
+  color: white;
+  padding: 40px;
+}
+.Book table{
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding-bottom: 40px;
+}
+.reviewBox{
+  background-color: lightgrey;
+  color: black;
+}
