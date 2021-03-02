@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Post.scss';
 import GridListTile from "@material-ui/core/GridListTile";
-import ListSubheader from "@material-ui/core/ListSubheader";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 
 const Post = (props) => (
@@ -18,6 +17,7 @@ const Post = (props) => (
                 }
                 title={props.title}
                 subtitle={<span>by: {props.author}</span>}
+                actionPosition={'left'}
 
             />
         </GridListTile>
