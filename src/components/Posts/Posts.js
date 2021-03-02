@@ -13,9 +13,13 @@ export class Posts extends Component {
         <div className="posts">
             <GridList cellHeight={180} className="grid">
             {this.props.posts.map((post) =>
-                  <Post title={post.title.rendered} author={post._embedded.author[0].name}
-                        authorImg={post._embedded.author[0].avatar_urls[24]} key={post.id}
-                        featuredImg={post._embedded['wp:featuredmedia'][0].source_url}
+                  <Post
+                      title={post.title.rendered}
+                      author={post._embedded.author[0].name}
+                      authorImg={post._embedded.author[0].avatar_urls[24]}
+                      key={post.id}
+                      featuredImg={post._embedded['wp:featuredmedia'][0].source_url}
+                      postUrl={post.link}
                   />
             )}
             </GridList>
