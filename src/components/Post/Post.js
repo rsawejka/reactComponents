@@ -5,7 +5,7 @@ import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 
 const Post = (props) => (
-<div className="Post">
+    <div className="Post">
 
 
         <GridListTile key="Subheader" cols={6} style={{ height: 'auto' }}>
@@ -22,7 +22,7 @@ const Post = (props) => (
             />
         </GridListTile>
 
-</div>
+    </div>
 
 );
 
