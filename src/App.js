@@ -1,5 +1,4 @@
 import {Posts} from './components/Posts/Posts'
-import {Books} from './components/books/Books'
 import './App.scss';
 import {SearchPosts} from "./components/SearchPosts/SearchPosts";
 import {useState} from "react";
@@ -15,7 +14,7 @@ function App() {
       </h1>
 
       <Posts />
-      <Books />
+
         <SearchPosts  onSearchResult={(results) => setPosts(results)}/>
         <hr />
       <Posts  posts={posts}/>
