@@ -20,6 +20,7 @@ export class Posts extends Component {
                       key={post.id}
                       featuredImg={post._embedded['wp:featuredmedia'][0].source_url}
                       postUrl={post.link}
+                      authorUrl={post._embedded.author[0].link}
                   />
             )}
             </GridList>

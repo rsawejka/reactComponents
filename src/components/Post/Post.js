@@ -15,8 +15,8 @@ const Post = (props) => (
                 actionIcon={
                     <img className="authorIcon" src={props.authorImg} />
                 }
-                title={<a href={props.postUrl}> {props.title} </a>}
-                subtitle={<span>by: {props.author}</span>}
+                title={<a className="link" href={props.postUrl}> {props.title} </a>}
+                subtitle={<span>by: <a className="link" href={props.authorUrl}> {props.author}</a></span>}
                 actionPosition={'left'}
 
             />
@@ -33,6 +33,7 @@ Post.propTypes = {
     authorImg: PropTypes.string,
     featuredImg: PropTypes.string,
     postUrl: PropTypes.string,
+    authorUrl: PropTypes.string,
 
 
 };
@@ -43,6 +44,7 @@ Post.defaultProps = {
     authorImg: "img url",
     featuredImg: "imgurl",
     postUrl: "post url",
+    authorUrl: "author url",
 };
 
 export default Post;
