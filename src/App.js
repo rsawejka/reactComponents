@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-          Our first react app.
+          Our first react appp.
       </h1>
         <SearchPosts  onSearchResult={(results) => setPosts(results)}/>
         <hr />
