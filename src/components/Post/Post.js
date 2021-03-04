@@ -13,7 +13,7 @@ const Post = (props) => (
             <img className="img" src={props.featuredImg} />
             <GridListTileBar
                 actionIcon={
-                    <img className="authorIcon" src={props.authorImg} />
+                    <a href={props.authorUrl}><img className="authorIcon" src={props.authorImg} /></a>
                 }
                 title={<a className="link" href={props.postUrl}> {props.title} </a>}
                 subtitle={<span>by: <a className="link" href={props.authorUrl}> {props.author}</a></span>}
